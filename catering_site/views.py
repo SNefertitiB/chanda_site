@@ -7,5 +7,15 @@ from django.template import loader
 def home(request):
     context = {}
     return render(request, 'home.html', context)
-    # template = loader.get_template('home.html')
-    # return HttpResponse(template.render(context,request))
+
+def about(request):
+    context = {}
+    return render(request, 'about.html', context)
+
+def contact(request):
+    context = {}
+    return render(request, 'contact.html', context)
+
+def menus(request):
+    context = {}
+    return render(request, 'menus.html', context)
