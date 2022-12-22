@@ -55,7 +55,9 @@ ROOT_URLCONF = 'chanda_catering.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'catering_site/templates/catering_site')],
+        'DIRS': [os.path.join(BASE_DIR, 'catering_site/templates/catering_site'),
+                 os.path.join(BASE_DIR, 'catering_site/templates/'),
+                 ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

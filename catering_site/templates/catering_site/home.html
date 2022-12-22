@@ -11,27 +11,7 @@
 </head>
 <body>
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Logo</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Menus</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    {% include 'common/navbar.html' %}
 
     <!-- Main page -->
     <div class="container-fluid p-2 bg-dark text-white text-center">
@@ -68,10 +48,9 @@
         </button>
     </div>
 
-<!-- Footer -->
-<div class="container-fluid p-2 bg-dark text-white text-center">
-    <a>Site by SNefertitiB</a>
-</div>
+    <!-- Footer -->
+    {% include 'common/footer.html' %}
+
 
 </body>
 </html>
