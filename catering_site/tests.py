@@ -11,3 +11,18 @@ class URLsTests(TestCase):
         c = Client()
         response = c.get("/")
         self.assertEqual(response.status_code, 200)
+
+    def test_about(self):
+        c = Client()
+        response = c.get("/about")
+        self.assertEqual(response.status_code, 200)
+
+    def test_contact(self):
+        c = Client()
+        response = c.get("/contact")
+        self.assertEqual(response.status_code, 200)
+
+    def test_menus(self):
+        c = Client()
+        response = c.get("/menus")
+        self.assertEqual(response.status_code, 200)
