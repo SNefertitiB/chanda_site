@@ -9,6 +9,5 @@ class URLsTests(TestCase):
         self.assertEqual(response.status_code, 302)
     def test_home(self):
         c = Client()
-        print('testing')
-        response = c.get("/home/")
+        response = c.get("/")
         self.assertEqual(response.status_code, 200)

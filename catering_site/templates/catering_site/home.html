@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,13 +49,13 @@
         <!-- The slideshow/carousel -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="catfish.jpg" alt="Catfish" class="d-block w-80">
+                <img src="{% static 'images/catfish.jpg' %}" alt="Catfish" class="d-block h-40">
             </div>
             <div class="carousel-item">
-                <img src="drink.jpeg" alt="Drink" class="d-block w-80">
+                <img src="{% static 'images/drink.jpeg' %}" alt="Drink" class="d-block 4-40">
             </div>
             <div class="carousel-item">
-                <img src="cheese_plate.jpg" alt="Cheese Plate" class="d-block h-80">
+                <img src="{% static 'images/cheese_plate.jpg' %}" alt="Cheese Plate" class="d-block h-40">
             </div>
         </div>
 
