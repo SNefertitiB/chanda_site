@@ -13,8 +13,64 @@
     <!-- Nav Bar -->
     {% include 'common/navbar.html' %}
 
-    <!-- Filler text -->
-    <h1> CONTACT US</h1>
+    <div class="row">
+        <!-- Contact us message -->
+        <div class="col-sm-6">
+            <h1> CONTACT US</h1>
+            <p>
+                We have experience catering for weddings,
+                graduation, birthday parties... you name it!
+                Let us know what kind of event you are planning.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Integer eget
+                aliquet nibh praesent tristique magna. Suspendisse
+                ultrices gravida dictum fusce ut placerat orci.
+                Tortor pretium viverra suspendisse potenti. Turpis
+                nunc eget lorem dolor sed viverra ipsum nunc
+                aliquet. Ut morbi tincidunt augue interdum velit
+                euismod in. Amet mattis vulputate enim nulla
+                aliquet. Sem nulla pharetra diam sit amet.
+                Ullamcorper dignissim cras tincidunt lobortis
+                feugiat vivamus at augue eget. Suspendisse
+                ultrices gravida dictum fusce ut. In massa tempor
+                nec feugiat nisl.
+            </p>
+        </div>
+        <!-- Contact us form -->
+        <div class="col-sm-6">
+            <div class="container pt-10" >
+                <div class="form-floating mb-3 mt-3">
+                    <input type="text" class="form-control" id="email" placeholder="name@example.com" name="email">
+                    <label for="email">Email</label>
+                </div>
+
+                <div class="form-floating mb-3 mt-3">
+                    <input type="text" class="form-control" id="phone" placeholder="999.999.9999" name="phone">
+                    <label for="phone">Phone</label>
+                </div>
+
+                <div class="form-floating mb-3 mt-3">
+                    <input type="text" class="form-control" id="type" placeholder="999.999.9999" name="type">
+                    <label for="type">Event Type</label>
+                </div>
+
+                <div class="form-floating mb-3 mt-3">
+                    <input type="text" class="form-control" id="guests" placeholder="999.999.9999" name="guests">
+                    <label for="guests">Number of guests</label>
+                </div>
+
+                <div class="form-floating mb-3 mt-3">
+                    <textarea class="form-control" rows="5" id="else" name="else">
+                    </textarea>
+                    <label for="else"> Any other information</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Footer -->
     {% include 'common/footer.html' %}
