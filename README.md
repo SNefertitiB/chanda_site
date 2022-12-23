@@ -1,7 +1,9 @@
-# chanda_site
+# About
 Catering site for Chanda
 
-Steps to test
+First solo django project after polls app.
+
+# Steps to test
 1) Create a virtual environment 
     ~~~
     virtualenv env
